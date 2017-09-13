@@ -2131,3 +2131,1599 @@ Processing by SongsController#index as HTML
   [1m[36mSong Load (0.8ms)[0m  [1mSELECT  "songs".* FROM "songs"  ORDER BY "songs"."title" ASC LIMIT 20 OFFSET 20[0m
   Rendered songs/index.html.erb within layouts/application (22.6ms)
 Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 1.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mArtist Load (0.3ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "The Killers"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 3], ["title", "Mr. Brightside"], ["created_at", "2017-09-13 17:30:20.626113"], ["updated_at", "2017-09-13 17:30:20.626113"]]
+  [1m[36m (4.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "The Killers"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 3], ["title", "Jenny Was a Friend of Mine"], ["created_at", "2017-09-13 17:30:20.635089"], ["updated_at", "2017-09-13 17:30:20.635089"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Tommy Tutone"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 4], ["title", "Jenny"], ["created_at", "2017-09-13 17:30:20.685638"], ["updated_at", "2017-09-13 17:30:20.685638"]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Daft Punk"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 5], ["title", "Around the World"], ["created_at", "2017-09-13 17:30:20.693775"], ["updated_at", "2017-09-13 17:30:20.693775"]]
+  [1m[36m (9.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Daft Punk"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 5], ["title", "Harder, Better, Faster, Stronger"], ["created_at", "2017-09-13 17:30:20.707259"], ["updated_at", "2017-09-13 17:30:20.707259"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Pixies"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 6], ["title", "Where is My Mind?"], ["created_at", "2017-09-13 17:30:20.715660"], ["updated_at", "2017-09-13 17:30:20.715660"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Pixies"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 6], ["title", "Gigantic"], ["created_at", "2017-09-13 17:30:20.725305"], ["updated_at", "2017-09-13 17:30:20.725305"]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mArtist Load (0.1ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."name" = ? LIMIT 1  [["name", "Pixies"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["artist_id", 6], ["title", "Monkey Gone to Heaven"], ["created_at", "2017-09-13 17:30:20.732951"], ["updated_at", "2017-09-13 17:30:20.732951"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "doloribus"], ["created_at", "2017-09-13 17:30:21.336145"], ["updated_at", "2017-09-13 17:30:21.336145"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "voluptas"], ["created_at", "2017-09-13 17:30:21.390371"], ["updated_at", "2017-09-13 17:30:21.390371"]]
+  [1m[36m (8.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "dicta"], ["created_at", "2017-09-13 17:30:21.401118"], ["updated_at", "2017-09-13 17:30:21.401118"]]
+  [1m[35m (4.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "aspernatur"], ["created_at", "2017-09-13 17:30:21.407265"], ["updated_at", "2017-09-13 17:30:21.407265"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "veritatis"], ["created_at", "2017-09-13 17:30:21.411542"], ["updated_at", "2017-09-13 17:30:21.411542"]]
+  [1m[35m (6.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "natus"], ["created_at", "2017-09-13 17:30:21.420913"], ["updated_at", "2017-09-13 17:30:21.420913"]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "deleniti"], ["created_at", "2017-09-13 17:30:21.426605"], ["updated_at", "2017-09-13 17:30:21.426605"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "et"], ["created_at", "2017-09-13 17:30:21.432369"], ["updated_at", "2017-09-13 17:30:21.432369"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "corporis"], ["created_at", "2017-09-13 17:30:21.437933"], ["updated_at", "2017-09-13 17:30:21.437933"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "illum"], ["created_at", "2017-09-13 17:30:21.443621"], ["updated_at", "2017-09-13 17:30:21.443621"]]
+  [1m[36m (5.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ab"], ["created_at", "2017-09-13 17:30:21.451273"], ["updated_at", "2017-09-13 17:30:21.451273"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "dolores"], ["created_at", "2017-09-13 17:30:21.456761"], ["updated_at", "2017-09-13 17:30:21.456761"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "minus"], ["created_at", "2017-09-13 17:30:21.462046"], ["updated_at", "2017-09-13 17:30:21.462046"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "assumenda"], ["created_at", "2017-09-13 17:30:21.467187"], ["updated_at", "2017-09-13 17:30:21.467187"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "exercitationem"], ["created_at", "2017-09-13 17:30:21.472817"], ["updated_at", "2017-09-13 17:30:21.472817"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "et"], ["created_at", "2017-09-13 17:30:21.477374"], ["updated_at", "2017-09-13 17:30:21.477374"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "consequuntur"], ["created_at", "2017-09-13 17:30:21.481453"], ["updated_at", "2017-09-13 17:30:21.481453"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "vitae"], ["created_at", "2017-09-13 17:30:21.485515"], ["updated_at", "2017-09-13 17:30:21.485515"]]
+  [1m[36m (4.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "alias"], ["created_at", "2017-09-13 17:30:21.491725"], ["updated_at", "2017-09-13 17:30:21.491725"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ab"], ["created_at", "2017-09-13 17:30:21.496552"], ["updated_at", "2017-09-13 17:30:21.496552"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "similique"], ["created_at", "2017-09-13 17:30:21.500478"], ["updated_at", "2017-09-13 17:30:21.500478"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sit"], ["created_at", "2017-09-13 17:30:21.505466"], ["updated_at", "2017-09-13 17:30:21.505466"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quia"], ["created_at", "2017-09-13 17:30:21.510096"], ["updated_at", "2017-09-13 17:30:21.510096"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "perferendis"], ["created_at", "2017-09-13 17:30:21.515863"], ["updated_at", "2017-09-13 17:30:21.515863"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "consequatur"], ["created_at", "2017-09-13 17:30:21.520749"], ["updated_at", "2017-09-13 17:30:21.520749"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "qui"], ["created_at", "2017-09-13 17:30:21.524998"], ["updated_at", "2017-09-13 17:30:21.524998"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "qui"], ["created_at", "2017-09-13 17:30:21.529474"], ["updated_at", "2017-09-13 17:30:21.529474"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sit"], ["created_at", "2017-09-13 17:30:21.534168"], ["updated_at", "2017-09-13 17:30:21.534168"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "enim"], ["created_at", "2017-09-13 17:30:21.539426"], ["updated_at", "2017-09-13 17:30:21.539426"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "aut"], ["created_at", "2017-09-13 17:30:21.543784"], ["updated_at", "2017-09-13 17:30:21.543784"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "enim"], ["created_at", "2017-09-13 17:30:21.548195"], ["updated_at", "2017-09-13 17:30:21.548195"]]
+  [1m[35m (5.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sequi"], ["created_at", "2017-09-13 17:30:21.555916"], ["updated_at", "2017-09-13 17:30:21.555916"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "dolores"], ["created_at", "2017-09-13 17:30:21.560835"], ["updated_at", "2017-09-13 17:30:21.560835"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "eaque"], ["created_at", "2017-09-13 17:30:21.564843"], ["updated_at", "2017-09-13 17:30:21.564843"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptas"], ["created_at", "2017-09-13 17:30:21.569515"], ["updated_at", "2017-09-13 17:30:21.569515"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "dolor"], ["created_at", "2017-09-13 17:30:21.574111"], ["updated_at", "2017-09-13 17:30:21.574111"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "est"], ["created_at", "2017-09-13 17:30:21.579085"], ["updated_at", "2017-09-13 17:30:21.579085"]]
+  [1m[35m (6.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "dolore"], ["created_at", "2017-09-13 17:30:21.587751"], ["updated_at", "2017-09-13 17:30:21.587751"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "maiores"], ["created_at", "2017-09-13 17:30:21.592079"], ["updated_at", "2017-09-13 17:30:21.592079"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "nostrum"], ["created_at", "2017-09-13 17:30:21.596311"], ["updated_at", "2017-09-13 17:30:21.596311"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "fuga"], ["created_at", "2017-09-13 17:30:21.601171"], ["updated_at", "2017-09-13 17:30:21.601171"]]
+  [1m[35m (7.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "non"], ["created_at", "2017-09-13 17:30:21.610969"], ["updated_at", "2017-09-13 17:30:21.610969"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "officiis"], ["created_at", "2017-09-13 17:30:21.616214"], ["updated_at", "2017-09-13 17:30:21.616214"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "omnis"], ["created_at", "2017-09-13 17:30:21.620923"], ["updated_at", "2017-09-13 17:30:21.620923"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "aut"], ["created_at", "2017-09-13 17:30:21.625667"], ["updated_at", "2017-09-13 17:30:21.625667"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sit"], ["created_at", "2017-09-13 17:30:21.630255"], ["updated_at", "2017-09-13 17:30:21.630255"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "aut"], ["created_at", "2017-09-13 17:30:21.635357"], ["updated_at", "2017-09-13 17:30:21.635357"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "minima"], ["created_at", "2017-09-13 17:30:21.640126"], ["updated_at", "2017-09-13 17:30:21.640126"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptas"], ["created_at", "2017-09-13 17:30:21.644796"], ["updated_at", "2017-09-13 17:30:21.644796"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "repudiandae"], ["created_at", "2017-09-13 17:30:21.649585"], ["updated_at", "2017-09-13 17:30:21.649585"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "illum"], ["created_at", "2017-09-13 17:30:21.654523"], ["updated_at", "2017-09-13 17:30:21.654523"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "voluptas"], ["created_at", "2017-09-13 17:30:21.659821"], ["updated_at", "2017-09-13 17:30:21.659821"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "incidunt"], ["created_at", "2017-09-13 17:30:21.665185"], ["updated_at", "2017-09-13 17:30:21.665185"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "voluptas"], ["created_at", "2017-09-13 17:30:21.670517"], ["updated_at", "2017-09-13 17:30:21.670517"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "placeat"], ["created_at", "2017-09-13 17:30:21.685196"], ["updated_at", "2017-09-13 17:30:21.685196"]]
+  [1m[35m (7.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "at"], ["created_at", "2017-09-13 17:30:21.695327"], ["updated_at", "2017-09-13 17:30:21.695327"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "tenetur"], ["created_at", "2017-09-13 17:30:21.700204"], ["updated_at", "2017-09-13 17:30:21.700204"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "placeat"], ["created_at", "2017-09-13 17:30:21.705130"], ["updated_at", "2017-09-13 17:30:21.705130"]]
+  [1m[36m (13.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "exercitationem"], ["created_at", "2017-09-13 17:30:21.721260"], ["updated_at", "2017-09-13 17:30:21.721260"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "tempore"], ["created_at", "2017-09-13 17:30:21.726812"], ["updated_at", "2017-09-13 17:30:21.726812"]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "et"], ["created_at", "2017-09-13 17:30:21.748925"], ["updated_at", "2017-09-13 17:30:21.748925"]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "qui"], ["created_at", "2017-09-13 17:30:21.756969"], ["updated_at", "2017-09-13 17:30:21.756969"]]
+  [1m[36m (7.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "vitae"], ["created_at", "2017-09-13 17:30:21.768188"], ["updated_at", "2017-09-13 17:30:21.768188"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quibusdam"], ["created_at", "2017-09-13 17:30:21.773096"], ["updated_at", "2017-09-13 17:30:21.773096"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "necessitatibus"], ["created_at", "2017-09-13 17:30:21.778249"], ["updated_at", "2017-09-13 17:30:21.778249"]]
+  [1m[35m (7.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sunt"], ["created_at", "2017-09-13 17:30:21.788071"], ["updated_at", "2017-09-13 17:30:21.788071"]]
+  [1m[36m (4.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "repudiandae"], ["created_at", "2017-09-13 17:30:21.794458"], ["updated_at", "2017-09-13 17:30:21.794458"]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "enim"], ["created_at", "2017-09-13 17:30:21.801013"], ["updated_at", "2017-09-13 17:30:21.801013"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ea"], ["created_at", "2017-09-13 17:30:21.806319"], ["updated_at", "2017-09-13 17:30:21.806319"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "est"], ["created_at", "2017-09-13 17:30:21.812455"], ["updated_at", "2017-09-13 17:30:21.812455"]]
+  [1m[36m (10.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "perspiciatis"], ["created_at", "2017-09-13 17:30:21.825281"], ["updated_at", "2017-09-13 17:30:21.825281"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "aut"], ["created_at", "2017-09-13 17:30:21.829959"], ["updated_at", "2017-09-13 17:30:21.829959"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "a"], ["created_at", "2017-09-13 17:30:21.835150"], ["updated_at", "2017-09-13 17:30:21.835150"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "et"], ["created_at", "2017-09-13 17:30:21.840221"], ["updated_at", "2017-09-13 17:30:21.840221"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "laborum"], ["created_at", "2017-09-13 17:30:21.844435"], ["updated_at", "2017-09-13 17:30:21.844435"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "atque"], ["created_at", "2017-09-13 17:30:21.848750"], ["updated_at", "2017-09-13 17:30:21.848750"]]
+  [1m[36m (4.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "eius"], ["created_at", "2017-09-13 17:30:21.855391"], ["updated_at", "2017-09-13 17:30:21.855391"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ullam"], ["created_at", "2017-09-13 17:30:21.859892"], ["updated_at", "2017-09-13 17:30:21.859892"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "vel"], ["created_at", "2017-09-13 17:30:21.864587"], ["updated_at", "2017-09-13 17:30:21.864587"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sequi"], ["created_at", "2017-09-13 17:30:21.869592"], ["updated_at", "2017-09-13 17:30:21.869592"]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "eos"], ["created_at", "2017-09-13 17:30:21.875348"], ["updated_at", "2017-09-13 17:30:21.875348"]]
+  [1m[35m (5.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "enim"], ["created_at", "2017-09-13 17:30:21.882964"], ["updated_at", "2017-09-13 17:30:21.882964"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "iure"], ["created_at", "2017-09-13 17:30:21.887940"], ["updated_at", "2017-09-13 17:30:21.887940"]]
+  [1m[35m (4.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "aut"], ["created_at", "2017-09-13 17:30:21.894517"], ["updated_at", "2017-09-13 17:30:21.894517"]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "et"], ["created_at", "2017-09-13 17:30:21.900365"], ["updated_at", "2017-09-13 17:30:21.900365"]]
+  [1m[35m (75.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "accusantium"], ["created_at", "2017-09-13 17:30:21.978572"], ["updated_at", "2017-09-13 17:30:21.978572"]]
+  [1m[36m (41.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "et"], ["created_at", "2017-09-13 17:30:22.023494"], ["updated_at", "2017-09-13 17:30:22.023494"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "atque"], ["created_at", "2017-09-13 17:30:22.028122"], ["updated_at", "2017-09-13 17:30:22.028122"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "dolore"], ["created_at", "2017-09-13 17:30:22.033300"], ["updated_at", "2017-09-13 17:30:22.033300"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "tempora"], ["created_at", "2017-09-13 17:30:22.038988"], ["updated_at", "2017-09-13 17:30:22.038988"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quo"], ["created_at", "2017-09-13 17:30:22.043692"], ["updated_at", "2017-09-13 17:30:22.043692"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "debitis"], ["created_at", "2017-09-13 17:30:22.049111"], ["updated_at", "2017-09-13 17:30:22.049111"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "rerum"], ["created_at", "2017-09-13 17:30:22.057146"], ["updated_at", "2017-09-13 17:30:22.057146"]]
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "facilis"], ["created_at", "2017-09-13 17:30:22.063720"], ["updated_at", "2017-09-13 17:30:22.063720"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "eveniet"], ["created_at", "2017-09-13 17:30:22.068386"], ["updated_at", "2017-09-13 17:30:22.068386"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "velit"], ["created_at", "2017-09-13 17:30:22.072869"], ["updated_at", "2017-09-13 17:30:22.072869"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "maiores"], ["created_at", "2017-09-13 17:30:22.077685"], ["updated_at", "2017-09-13 17:30:22.077685"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "fugiat"], ["created_at", "2017-09-13 17:30:22.082172"], ["updated_at", "2017-09-13 17:30:22.082172"]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "nulla"], ["created_at", "2017-09-13 17:30:22.087492"], ["updated_at", "2017-09-13 17:30:22.087492"]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "delectus"], ["created_at", "2017-09-13 17:30:22.092941"], ["updated_at", "2017-09-13 17:30:22.092941"]]
+  [1m[36m (5.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "sit"], ["created_at", "2017-09-13 17:30:22.100386"], ["updated_at", "2017-09-13 17:30:22.100386"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quasi"], ["created_at", "2017-09-13 17:30:22.105818"], ["updated_at", "2017-09-13 17:30:22.105818"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ut"], ["created_at", "2017-09-13 17:30:22.110382"], ["updated_at", "2017-09-13 17:30:22.110382"]]
+  [1m[35m (11.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "totam"], ["created_at", "2017-09-13 17:30:22.124991"], ["updated_at", "2017-09-13 17:30:22.124991"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptatibus"], ["created_at", "2017-09-13 17:30:22.129707"], ["updated_at", "2017-09-13 17:30:22.129707"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "possimus"], ["created_at", "2017-09-13 17:30:22.134387"], ["updated_at", "2017-09-13 17:30:22.134387"]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "molestiae"], ["created_at", "2017-09-13 17:30:22.140068"], ["updated_at", "2017-09-13 17:30:22.140068"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "error"], ["created_at", "2017-09-13 17:30:22.144463"], ["updated_at", "2017-09-13 17:30:22.144463"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quo"], ["created_at", "2017-09-13 17:30:22.149542"], ["updated_at", "2017-09-13 17:30:22.149542"]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "laboriosam"], ["created_at", "2017-09-13 17:30:22.156702"], ["updated_at", "2017-09-13 17:30:22.156702"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "consequatur"], ["created_at", "2017-09-13 17:30:22.161162"], ["updated_at", "2017-09-13 17:30:22.161162"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "earum"], ["created_at", "2017-09-13 17:30:22.165728"], ["updated_at", "2017-09-13 17:30:22.165728"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "incidunt"], ["created_at", "2017-09-13 17:30:22.170235"], ["updated_at", "2017-09-13 17:30:22.170235"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "laboriosam"], ["created_at", "2017-09-13 17:30:22.175416"], ["updated_at", "2017-09-13 17:30:22.175416"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "odio"], ["created_at", "2017-09-13 17:30:22.179579"], ["updated_at", "2017-09-13 17:30:22.179579"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "dolor"], ["created_at", "2017-09-13 17:30:22.184055"], ["updated_at", "2017-09-13 17:30:22.184055"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "iusto"], ["created_at", "2017-09-13 17:30:22.188423"], ["updated_at", "2017-09-13 17:30:22.188423"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "dignissimos"], ["created_at", "2017-09-13 17:30:22.192759"], ["updated_at", "2017-09-13 17:30:22.192759"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "porro"], ["created_at", "2017-09-13 17:30:22.197336"], ["updated_at", "2017-09-13 17:30:22.197336"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sed"], ["created_at", "2017-09-13 17:30:22.202246"], ["updated_at", "2017-09-13 17:30:22.202246"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "qui"], ["created_at", "2017-09-13 17:30:22.207436"], ["updated_at", "2017-09-13 17:30:22.207436"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "rerum"], ["created_at", "2017-09-13 17:30:22.211820"], ["updated_at", "2017-09-13 17:30:22.211820"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "enim"], ["created_at", "2017-09-13 17:30:22.216680"], ["updated_at", "2017-09-13 17:30:22.216680"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "porro"], ["created_at", "2017-09-13 17:30:22.221800"], ["updated_at", "2017-09-13 17:30:22.221800"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "rerum"], ["created_at", "2017-09-13 17:30:22.226616"], ["updated_at", "2017-09-13 17:30:22.226616"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "totam"], ["created_at", "2017-09-13 17:30:22.231993"], ["updated_at", "2017-09-13 17:30:22.231993"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "inventore"], ["created_at", "2017-09-13 17:30:22.236532"], ["updated_at", "2017-09-13 17:30:22.236532"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sint"], ["created_at", "2017-09-13 17:30:22.241275"], ["updated_at", "2017-09-13 17:30:22.241275"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ut"], ["created_at", "2017-09-13 17:30:22.245669"], ["updated_at", "2017-09-13 17:30:22.245669"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "debitis"], ["created_at", "2017-09-13 17:30:22.250130"], ["updated_at", "2017-09-13 17:30:22.250130"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quia"], ["created_at", "2017-09-13 17:30:22.255419"], ["updated_at", "2017-09-13 17:30:22.255419"]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ut"], ["created_at", "2017-09-13 17:30:22.261398"], ["updated_at", "2017-09-13 17:30:22.261398"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ullam"], ["created_at", "2017-09-13 17:30:22.266259"], ["updated_at", "2017-09-13 17:30:22.266259"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "doloremque"], ["created_at", "2017-09-13 17:30:22.270976"], ["updated_at", "2017-09-13 17:30:22.270976"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ad"], ["created_at", "2017-09-13 17:30:22.276834"], ["updated_at", "2017-09-13 17:30:22.276834"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "fugiat"], ["created_at", "2017-09-13 17:30:22.281374"], ["updated_at", "2017-09-13 17:30:22.281374"]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "esse"], ["created_at", "2017-09-13 17:30:22.287991"], ["updated_at", "2017-09-13 17:30:22.287991"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "expedita"], ["created_at", "2017-09-13 17:30:22.292611"], ["updated_at", "2017-09-13 17:30:22.292611"]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quo"], ["created_at", "2017-09-13 17:30:22.297922"], ["updated_at", "2017-09-13 17:30:22.297922"]]
+  [1m[35m (5.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "voluptatem"], ["created_at", "2017-09-13 17:30:22.305671"], ["updated_at", "2017-09-13 17:30:22.305671"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "id"], ["created_at", "2017-09-13 17:30:22.310638"], ["updated_at", "2017-09-13 17:30:22.310638"]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "est"], ["created_at", "2017-09-13 17:30:22.316619"], ["updated_at", "2017-09-13 17:30:22.316619"]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "est"], ["created_at", "2017-09-13 17:30:22.322260"], ["updated_at", "2017-09-13 17:30:22.322260"]]
+  [1m[35m (8.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "consectetur"], ["created_at", "2017-09-13 17:30:22.333448"], ["updated_at", "2017-09-13 17:30:22.333448"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quia"], ["created_at", "2017-09-13 17:30:22.338084"], ["updated_at", "2017-09-13 17:30:22.338084"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sunt"], ["created_at", "2017-09-13 17:30:22.343535"], ["updated_at", "2017-09-13 17:30:22.343535"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "et"], ["created_at", "2017-09-13 17:30:22.348120"], ["updated_at", "2017-09-13 17:30:22.348120"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "facere"], ["created_at", "2017-09-13 17:30:22.353101"], ["updated_at", "2017-09-13 17:30:22.353101"]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "veniam"], ["created_at", "2017-09-13 17:30:22.360813"], ["updated_at", "2017-09-13 17:30:22.360813"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "aut"], ["created_at", "2017-09-13 17:30:22.365695"], ["updated_at", "2017-09-13 17:30:22.365695"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "recusandae"], ["created_at", "2017-09-13 17:30:22.370742"], ["updated_at", "2017-09-13 17:30:22.370742"]]
+  [1m[35m (7.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "nesciunt"], ["created_at", "2017-09-13 17:30:22.380727"], ["updated_at", "2017-09-13 17:30:22.380727"]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "sit"], ["created_at", "2017-09-13 17:30:22.385966"], ["updated_at", "2017-09-13 17:30:22.385966"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ut"], ["created_at", "2017-09-13 17:30:22.390595"], ["updated_at", "2017-09-13 17:30:22.390595"]]
+  [1m[36m (6.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "sed"], ["created_at", "2017-09-13 17:30:22.399256"], ["updated_at", "2017-09-13 17:30:22.399256"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sit"], ["created_at", "2017-09-13 17:30:22.404270"], ["updated_at", "2017-09-13 17:30:22.404270"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ea"], ["created_at", "2017-09-13 17:30:22.409015"], ["updated_at", "2017-09-13 17:30:22.409015"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "deserunt"], ["created_at", "2017-09-13 17:30:22.414239"], ["updated_at", "2017-09-13 17:30:22.414239"]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "sed"], ["created_at", "2017-09-13 17:30:22.423641"], ["updated_at", "2017-09-13 17:30:22.423641"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "earum"], ["created_at", "2017-09-13 17:30:22.428847"], ["updated_at", "2017-09-13 17:30:22.428847"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ipsam"], ["created_at", "2017-09-13 17:30:22.433725"], ["updated_at", "2017-09-13 17:30:22.433725"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "eveniet"], ["created_at", "2017-09-13 17:30:22.438858"], ["updated_at", "2017-09-13 17:30:22.438858"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "et"], ["created_at", "2017-09-13 17:30:22.444179"], ["updated_at", "2017-09-13 17:30:22.444179"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "velit"], ["created_at", "2017-09-13 17:30:22.448707"], ["updated_at", "2017-09-13 17:30:22.448707"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "amet"], ["created_at", "2017-09-13 17:30:22.454048"], ["updated_at", "2017-09-13 17:30:22.454048"]]
+  [1m[35m (5.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "aut"], ["created_at", "2017-09-13 17:30:22.461645"], ["updated_at", "2017-09-13 17:30:22.461645"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "in"], ["created_at", "2017-09-13 17:30:22.466594"], ["updated_at", "2017-09-13 17:30:22.466594"]]
+  [1m[35m (9.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "hic"], ["created_at", "2017-09-13 17:30:22.478737"], ["updated_at", "2017-09-13 17:30:22.478737"]]
+  [1m[36m (5.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "sunt"], ["created_at", "2017-09-13 17:30:22.488904"], ["updated_at", "2017-09-13 17:30:22.488904"]]
+  [1m[35m (12.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "et"], ["created_at", "2017-09-13 17:30:22.503880"], ["updated_at", "2017-09-13 17:30:22.503880"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptate"], ["created_at", "2017-09-13 17:30:22.510256"], ["updated_at", "2017-09-13 17:30:22.510256"]]
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ex"], ["created_at", "2017-09-13 17:30:22.517421"], ["updated_at", "2017-09-13 17:30:22.517421"]]
+  [1m[36m (6.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "illum"], ["created_at", "2017-09-13 17:30:22.526807"], ["updated_at", "2017-09-13 17:30:22.526807"]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "occaecati"], ["created_at", "2017-09-13 17:30:22.532815"], ["updated_at", "2017-09-13 17:30:22.532815"]]
+  [1m[36m (6.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "veniam"], ["created_at", "2017-09-13 17:30:22.541476"], ["updated_at", "2017-09-13 17:30:22.541476"]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "eius"], ["created_at", "2017-09-13 17:30:22.547625"], ["updated_at", "2017-09-13 17:30:22.547625"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "eum"], ["created_at", "2017-09-13 17:30:22.553137"], ["updated_at", "2017-09-13 17:30:22.553137"]]
+  [1m[35m (5.0ms)[0m  commit transaction
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "fugit"], ["created_at", "2017-09-13 17:30:22.561482"], ["updated_at", "2017-09-13 17:30:22.561482"]]
+  [1m[36m (6.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "alias"], ["created_at", "2017-09-13 17:30:22.570302"], ["updated_at", "2017-09-13 17:30:22.570302"]]
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "enim"], ["created_at", "2017-09-13 17:30:22.577233"], ["updated_at", "2017-09-13 17:30:22.577233"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "officiis"], ["created_at", "2017-09-13 17:30:22.582422"], ["updated_at", "2017-09-13 17:30:22.582422"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "recusandae"], ["created_at", "2017-09-13 17:30:22.587465"], ["updated_at", "2017-09-13 17:30:22.587465"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "esse"], ["created_at", "2017-09-13 17:30:22.592715"], ["updated_at", "2017-09-13 17:30:22.592715"]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "officiis"], ["created_at", "2017-09-13 17:30:22.598912"], ["updated_at", "2017-09-13 17:30:22.598912"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "mollitia"], ["created_at", "2017-09-13 17:30:22.604188"], ["updated_at", "2017-09-13 17:30:22.604188"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "temporibus"], ["created_at", "2017-09-13 17:30:22.608862"], ["updated_at", "2017-09-13 17:30:22.608862"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "culpa"], ["created_at", "2017-09-13 17:30:22.613537"], ["updated_at", "2017-09-13 17:30:22.613537"]]
+  [1m[35m (4.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "dolorem"], ["created_at", "2017-09-13 17:30:22.620406"], ["updated_at", "2017-09-13 17:30:22.620406"]]
+  [1m[36m (5.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "architecto"], ["created_at", "2017-09-13 17:30:22.628923"], ["updated_at", "2017-09-13 17:30:22.628923"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "veniam"], ["created_at", "2017-09-13 17:30:22.634143"], ["updated_at", "2017-09-13 17:30:22.634143"]]
+  [1m[36m (6.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "dicta"], ["created_at", "2017-09-13 17:30:22.642882"], ["updated_at", "2017-09-13 17:30:22.642882"]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "accusamus"], ["created_at", "2017-09-13 17:30:22.649172"], ["updated_at", "2017-09-13 17:30:22.649172"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ut"], ["created_at", "2017-09-13 17:30:22.653946"], ["updated_at", "2017-09-13 17:30:22.653946"]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "libero"], ["created_at", "2017-09-13 17:30:22.660739"], ["updated_at", "2017-09-13 17:30:22.660739"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "doloremque"], ["created_at", "2017-09-13 17:30:22.665762"], ["updated_at", "2017-09-13 17:30:22.665762"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "totam"], ["created_at", "2017-09-13 17:30:22.671725"], ["updated_at", "2017-09-13 17:30:22.671725"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "consequuntur"], ["created_at", "2017-09-13 17:30:22.676375"], ["updated_at", "2017-09-13 17:30:22.676375"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "illum"], ["created_at", "2017-09-13 17:30:22.680842"], ["updated_at", "2017-09-13 17:30:22.680842"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "corporis"], ["created_at", "2017-09-13 17:30:22.685572"], ["updated_at", "2017-09-13 17:30:22.685572"]]
+  [1m[35m (3.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ut"], ["created_at", "2017-09-13 17:30:22.691799"], ["updated_at", "2017-09-13 17:30:22.691799"]]
+  [1m[36m (9.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "eum"], ["created_at", "2017-09-13 17:30:22.704162"], ["updated_at", "2017-09-13 17:30:22.704162"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "atque"], ["created_at", "2017-09-13 17:30:22.709236"], ["updated_at", "2017-09-13 17:30:22.709236"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "alias"], ["created_at", "2017-09-13 17:30:22.714778"], ["updated_at", "2017-09-13 17:30:22.714778"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quia"], ["created_at", "2017-09-13 17:30:22.720445"], ["updated_at", "2017-09-13 17:30:22.720445"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "mollitia"], ["created_at", "2017-09-13 17:30:22.726164"], ["updated_at", "2017-09-13 17:30:22.726164"]]
+  [1m[35m (4.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "dignissimos"], ["created_at", "2017-09-13 17:30:22.734483"], ["updated_at", "2017-09-13 17:30:22.734483"]]
+  [1m[36m (4.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "eum"], ["created_at", "2017-09-13 17:30:22.741203"], ["updated_at", "2017-09-13 17:30:22.741203"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "optio"], ["created_at", "2017-09-13 17:30:22.745697"], ["updated_at", "2017-09-13 17:30:22.745697"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "est"], ["created_at", "2017-09-13 17:30:22.750163"], ["updated_at", "2017-09-13 17:30:22.750163"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quaerat"], ["created_at", "2017-09-13 17:30:22.755448"], ["updated_at", "2017-09-13 17:30:22.755448"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "debitis"], ["created_at", "2017-09-13 17:30:22.760783"], ["updated_at", "2017-09-13 17:30:22.760783"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "maiores"], ["created_at", "2017-09-13 17:30:22.766063"], ["updated_at", "2017-09-13 17:30:22.766063"]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "corrupti"], ["created_at", "2017-09-13 17:30:22.776471"], ["updated_at", "2017-09-13 17:30:22.776471"]]
+  [1m[35m (9.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ut"], ["created_at", "2017-09-13 17:30:22.788083"], ["updated_at", "2017-09-13 17:30:22.788083"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "fugit"], ["created_at", "2017-09-13 17:30:22.793627"], ["updated_at", "2017-09-13 17:30:22.793627"]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sed"], ["created_at", "2017-09-13 17:30:22.799587"], ["updated_at", "2017-09-13 17:30:22.799587"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "nisi"], ["created_at", "2017-09-13 17:30:22.804612"], ["updated_at", "2017-09-13 17:30:22.804612"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ratione"], ["created_at", "2017-09-13 17:30:22.809338"], ["updated_at", "2017-09-13 17:30:22.809338"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "reprehenderit"], ["created_at", "2017-09-13 17:30:22.813821"], ["updated_at", "2017-09-13 17:30:22.813821"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "saepe"], ["created_at", "2017-09-13 17:30:22.818103"], ["updated_at", "2017-09-13 17:30:22.818103"]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "eum"], ["created_at", "2017-09-13 17:30:22.823916"], ["updated_at", "2017-09-13 17:30:22.823916"]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "est"], ["created_at", "2017-09-13 17:30:22.830185"], ["updated_at", "2017-09-13 17:30:22.830185"]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "blanditiis"], ["created_at", "2017-09-13 17:30:22.836853"], ["updated_at", "2017-09-13 17:30:22.836853"]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ad"], ["created_at", "2017-09-13 17:30:22.843157"], ["updated_at", "2017-09-13 17:30:22.843157"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "dicta"], ["created_at", "2017-09-13 17:30:22.848637"], ["updated_at", "2017-09-13 17:30:22.848637"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ducimus"], ["created_at", "2017-09-13 17:30:22.854610"], ["updated_at", "2017-09-13 17:30:22.854610"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "dolore"], ["created_at", "2017-09-13 17:30:22.859629"], ["updated_at", "2017-09-13 17:30:22.859629"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quaerat"], ["created_at", "2017-09-13 17:30:22.863913"], ["updated_at", "2017-09-13 17:30:22.863913"]]
+  [1m[36m (7.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "cum"], ["created_at", "2017-09-13 17:30:22.873036"], ["updated_at", "2017-09-13 17:30:22.873036"]]
+  [1m[35m (15.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "deleniti"], ["created_at", "2017-09-13 17:30:22.890442"], ["updated_at", "2017-09-13 17:30:22.890442"]]
+  [1m[36m (3.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "nemo"], ["created_at", "2017-09-13 17:30:22.897699"], ["updated_at", "2017-09-13 17:30:22.897699"]]
+  [1m[35m (4.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "iure"], ["created_at", "2017-09-13 17:30:22.904145"], ["updated_at", "2017-09-13 17:30:22.904145"]]
+  [1m[36m (4.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "iste"], ["created_at", "2017-09-13 17:30:22.910514"], ["updated_at", "2017-09-13 17:30:22.910514"]]
+  [1m[35m (11.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "fuga"], ["created_at", "2017-09-13 17:30:22.925138"], ["updated_at", "2017-09-13 17:30:22.925138"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "corporis"], ["created_at", "2017-09-13 17:30:22.930189"], ["updated_at", "2017-09-13 17:30:22.930189"]]
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "iste"], ["created_at", "2017-09-13 17:30:22.937356"], ["updated_at", "2017-09-13 17:30:22.937356"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "nesciunt"], ["created_at", "2017-09-13 17:30:22.942796"], ["updated_at", "2017-09-13 17:30:22.942796"]]
+  [1m[35m (6.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "aut"], ["created_at", "2017-09-13 17:30:22.951487"], ["updated_at", "2017-09-13 17:30:22.951487"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "harum"], ["created_at", "2017-09-13 17:30:22.957258"], ["updated_at", "2017-09-13 17:30:22.957258"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "beatae"], ["created_at", "2017-09-13 17:30:22.962021"], ["updated_at", "2017-09-13 17:30:22.962021"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quidem"], ["created_at", "2017-09-13 17:30:22.968085"], ["updated_at", "2017-09-13 17:30:22.968085"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ut"], ["created_at", "2017-09-13 17:30:22.973007"], ["updated_at", "2017-09-13 17:30:22.973007"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "aut"], ["created_at", "2017-09-13 17:30:22.977811"], ["updated_at", "2017-09-13 17:30:22.977811"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "doloribus"], ["created_at", "2017-09-13 17:30:22.982613"], ["updated_at", "2017-09-13 17:30:22.982613"]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "aliquam"], ["created_at", "2017-09-13 17:30:22.989201"], ["updated_at", "2017-09-13 17:30:22.989201"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "id"], ["created_at", "2017-09-13 17:30:22.994447"], ["updated_at", "2017-09-13 17:30:22.994447"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "optio"], ["created_at", "2017-09-13 17:30:22.999925"], ["updated_at", "2017-09-13 17:30:22.999925"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "aut"], ["created_at", "2017-09-13 17:30:23.004815"], ["updated_at", "2017-09-13 17:30:23.004815"]]
+  [1m[36m (7.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "eos"], ["created_at", "2017-09-13 17:30:23.015412"], ["updated_at", "2017-09-13 17:30:23.015412"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "necessitatibus"], ["created_at", "2017-09-13 17:30:23.020750"], ["updated_at", "2017-09-13 17:30:23.020750"]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "accusamus"], ["created_at", "2017-09-13 17:30:23.026982"], ["updated_at", "2017-09-13 17:30:23.026982"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "eligendi"], ["created_at", "2017-09-13 17:30:23.032203"], ["updated_at", "2017-09-13 17:30:23.032203"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quibusdam"], ["created_at", "2017-09-13 17:30:23.037285"], ["updated_at", "2017-09-13 17:30:23.037285"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quia"], ["created_at", "2017-09-13 17:30:23.042114"], ["updated_at", "2017-09-13 17:30:23.042114"]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "enim"], ["created_at", "2017-09-13 17:30:23.047634"], ["updated_at", "2017-09-13 17:30:23.047634"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "consequuntur"], ["created_at", "2017-09-13 17:30:23.052198"], ["updated_at", "2017-09-13 17:30:23.052198"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "architecto"], ["created_at", "2017-09-13 17:30:23.057409"], ["updated_at", "2017-09-13 17:30:23.057409"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "et"], ["created_at", "2017-09-13 17:30:23.062714"], ["updated_at", "2017-09-13 17:30:23.062714"]]
+  [1m[36m (6.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "minima"], ["created_at", "2017-09-13 17:30:23.071867"], ["updated_at", "2017-09-13 17:30:23.071867"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "harum"], ["created_at", "2017-09-13 17:30:23.077706"], ["updated_at", "2017-09-13 17:30:23.077706"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "et"], ["created_at", "2017-09-13 17:30:23.082332"], ["updated_at", "2017-09-13 17:30:23.082332"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "exercitationem"], ["created_at", "2017-09-13 17:30:23.087813"], ["updated_at", "2017-09-13 17:30:23.087813"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "nesciunt"], ["created_at", "2017-09-13 17:30:23.093347"], ["updated_at", "2017-09-13 17:30:23.093347"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "repellendus"], ["created_at", "2017-09-13 17:30:23.098148"], ["updated_at", "2017-09-13 17:30:23.098148"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "consectetur"], ["created_at", "2017-09-13 17:30:23.103651"], ["updated_at", "2017-09-13 17:30:23.103651"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "laborum"], ["created_at", "2017-09-13 17:30:23.108840"], ["updated_at", "2017-09-13 17:30:23.108840"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "velit"], ["created_at", "2017-09-13 17:30:23.113566"], ["updated_at", "2017-09-13 17:30:23.113566"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quaerat"], ["created_at", "2017-09-13 17:30:23.118964"], ["updated_at", "2017-09-13 17:30:23.118964"]]
+  [1m[36m (9.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptatem"], ["created_at", "2017-09-13 17:30:23.131434"], ["updated_at", "2017-09-13 17:30:23.131434"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "accusantium"], ["created_at", "2017-09-13 17:30:23.136386"], ["updated_at", "2017-09-13 17:30:23.136386"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quia"], ["created_at", "2017-09-13 17:30:23.141742"], ["updated_at", "2017-09-13 17:30:23.141742"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "repudiandae"], ["created_at", "2017-09-13 17:30:23.146097"], ["updated_at", "2017-09-13 17:30:23.146097"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "fugiat"], ["created_at", "2017-09-13 17:30:23.151001"], ["updated_at", "2017-09-13 17:30:23.151001"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ducimus"], ["created_at", "2017-09-13 17:30:23.155753"], ["updated_at", "2017-09-13 17:30:23.155753"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "numquam"], ["created_at", "2017-09-13 17:30:23.164023"], ["updated_at", "2017-09-13 17:30:23.164023"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "magni"], ["created_at", "2017-09-13 17:30:23.169372"], ["updated_at", "2017-09-13 17:30:23.169372"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "qui"], ["created_at", "2017-09-13 17:30:23.174074"], ["updated_at", "2017-09-13 17:30:23.174074"]]
+  [1m[35m (8.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "qui"], ["created_at", "2017-09-13 17:30:23.184681"], ["updated_at", "2017-09-13 17:30:23.184681"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "et"], ["created_at", "2017-09-13 17:30:23.189647"], ["updated_at", "2017-09-13 17:30:23.189647"]]
+  [1m[35m (4.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "recusandae"], ["created_at", "2017-09-13 17:30:23.196570"], ["updated_at", "2017-09-13 17:30:23.196570"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "porro"], ["created_at", "2017-09-13 17:30:23.201624"], ["updated_at", "2017-09-13 17:30:23.201624"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "dicta"], ["created_at", "2017-09-13 17:30:23.206632"], ["updated_at", "2017-09-13 17:30:23.206632"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "eaque"], ["created_at", "2017-09-13 17:30:23.212734"], ["updated_at", "2017-09-13 17:30:23.212734"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "veritatis"], ["created_at", "2017-09-13 17:30:23.218173"], ["updated_at", "2017-09-13 17:30:23.218173"]]
+  [1m[36m (6.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "occaecati"], ["created_at", "2017-09-13 17:30:23.227137"], ["updated_at", "2017-09-13 17:30:23.227137"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "mollitia"], ["created_at", "2017-09-13 17:30:23.232429"], ["updated_at", "2017-09-13 17:30:23.232429"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "culpa"], ["created_at", "2017-09-13 17:30:23.236784"], ["updated_at", "2017-09-13 17:30:23.236784"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "et"], ["created_at", "2017-09-13 17:30:23.240852"], ["updated_at", "2017-09-13 17:30:23.240852"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "eius"], ["created_at", "2017-09-13 17:30:23.245186"], ["updated_at", "2017-09-13 17:30:23.245186"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "omnis"], ["created_at", "2017-09-13 17:30:23.249471"], ["updated_at", "2017-09-13 17:30:23.249471"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "soluta"], ["created_at", "2017-09-13 17:30:23.254596"], ["updated_at", "2017-09-13 17:30:23.254596"]]
+  [1m[35m (4.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "eligendi"], ["created_at", "2017-09-13 17:30:23.261974"], ["updated_at", "2017-09-13 17:30:23.261974"]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quidem"], ["created_at", "2017-09-13 17:30:23.267926"], ["updated_at", "2017-09-13 17:30:23.267926"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "eveniet"], ["created_at", "2017-09-13 17:30:23.273094"], ["updated_at", "2017-09-13 17:30:23.273094"]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "nulla"], ["created_at", "2017-09-13 17:30:23.279077"], ["updated_at", "2017-09-13 17:30:23.279077"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "atque"], ["created_at", "2017-09-13 17:30:23.284124"], ["updated_at", "2017-09-13 17:30:23.284124"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "aspernatur"], ["created_at", "2017-09-13 17:30:23.288683"], ["updated_at", "2017-09-13 17:30:23.288683"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quas"], ["created_at", "2017-09-13 17:30:23.293114"], ["updated_at", "2017-09-13 17:30:23.293114"]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quod"], ["created_at", "2017-09-13 17:30:23.299581"], ["updated_at", "2017-09-13 17:30:23.299581"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quis"], ["created_at", "2017-09-13 17:30:23.304165"], ["updated_at", "2017-09-13 17:30:23.304165"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "fugiat"], ["created_at", "2017-09-13 17:30:23.309112"], ["updated_at", "2017-09-13 17:30:23.309112"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ex"], ["created_at", "2017-09-13 17:30:23.314368"], ["updated_at", "2017-09-13 17:30:23.314368"]]
+  [1m[36m (7.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "sit"], ["created_at", "2017-09-13 17:30:23.324613"], ["updated_at", "2017-09-13 17:30:23.324613"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "nisi"], ["created_at", "2017-09-13 17:30:23.329327"], ["updated_at", "2017-09-13 17:30:23.329327"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ipsum"], ["created_at", "2017-09-13 17:30:23.333925"], ["updated_at", "2017-09-13 17:30:23.333925"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "corrupti"], ["created_at", "2017-09-13 17:30:23.339694"], ["updated_at", "2017-09-13 17:30:23.339694"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "dolore"], ["created_at", "2017-09-13 17:30:23.343953"], ["updated_at", "2017-09-13 17:30:23.343953"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "architecto"], ["created_at", "2017-09-13 17:30:23.348171"], ["updated_at", "2017-09-13 17:30:23.348171"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "eum"], ["created_at", "2017-09-13 17:30:23.353228"], ["updated_at", "2017-09-13 17:30:23.353228"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "qui"], ["created_at", "2017-09-13 17:30:23.358153"], ["updated_at", "2017-09-13 17:30:23.358153"]]
+  [1m[36m (4.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "repellendus"], ["created_at", "2017-09-13 17:30:23.365318"], ["updated_at", "2017-09-13 17:30:23.365318"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ut"], ["created_at", "2017-09-13 17:30:23.370144"], ["updated_at", "2017-09-13 17:30:23.370144"]]
+  [1m[36m (6.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "nisi"], ["created_at", "2017-09-13 17:30:23.379171"], ["updated_at", "2017-09-13 17:30:23.379171"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "et"], ["created_at", "2017-09-13 17:30:23.383878"], ["updated_at", "2017-09-13 17:30:23.383878"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ex"], ["created_at", "2017-09-13 17:30:23.388152"], ["updated_at", "2017-09-13 17:30:23.388152"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "numquam"], ["created_at", "2017-09-13 17:30:23.393197"], ["updated_at", "2017-09-13 17:30:23.393197"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "laboriosam"], ["created_at", "2017-09-13 17:30:23.397824"], ["updated_at", "2017-09-13 17:30:23.397824"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "maxime"], ["created_at", "2017-09-13 17:30:23.403155"], ["updated_at", "2017-09-13 17:30:23.403155"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptas"], ["created_at", "2017-09-13 17:30:23.407936"], ["updated_at", "2017-09-13 17:30:23.407936"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "occaecati"], ["created_at", "2017-09-13 17:30:23.412543"], ["updated_at", "2017-09-13 17:30:23.412543"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "nulla"], ["created_at", "2017-09-13 17:30:23.417029"], ["updated_at", "2017-09-13 17:30:23.417029"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "voluptatem"], ["created_at", "2017-09-13 17:30:23.421406"], ["updated_at", "2017-09-13 17:30:23.421406"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "nostrum"], ["created_at", "2017-09-13 17:30:23.425719"], ["updated_at", "2017-09-13 17:30:23.425719"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "dolores"], ["created_at", "2017-09-13 17:30:23.430636"], ["updated_at", "2017-09-13 17:30:23.430636"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "qui"], ["created_at", "2017-09-13 17:30:23.435765"], ["updated_at", "2017-09-13 17:30:23.435765"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "similique"], ["created_at", "2017-09-13 17:30:23.440301"], ["updated_at", "2017-09-13 17:30:23.440301"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "exercitationem"], ["created_at", "2017-09-13 17:30:23.444913"], ["updated_at", "2017-09-13 17:30:23.444913"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "et"], ["created_at", "2017-09-13 17:30:23.449475"], ["updated_at", "2017-09-13 17:30:23.449475"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "similique"], ["created_at", "2017-09-13 17:30:23.453907"], ["updated_at", "2017-09-13 17:30:23.453907"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "minus"], ["created_at", "2017-09-13 17:30:23.458197"], ["updated_at", "2017-09-13 17:30:23.458197"]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "sed"], ["created_at", "2017-09-13 17:30:23.463309"], ["updated_at", "2017-09-13 17:30:23.463309"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "placeat"], ["created_at", "2017-09-13 17:30:23.468509"], ["updated_at", "2017-09-13 17:30:23.468509"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "qui"], ["created_at", "2017-09-13 17:30:23.473477"], ["updated_at", "2017-09-13 17:30:23.473477"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ipsa"], ["created_at", "2017-09-13 17:30:23.477574"], ["updated_at", "2017-09-13 17:30:23.477574"]]
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "sit"], ["created_at", "2017-09-13 17:30:23.489607"], ["updated_at", "2017-09-13 17:30:23.489607"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "doloribus"], ["created_at", "2017-09-13 17:30:23.494155"], ["updated_at", "2017-09-13 17:30:23.494155"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "suscipit"], ["created_at", "2017-09-13 17:30:23.498883"], ["updated_at", "2017-09-13 17:30:23.498883"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "iure"], ["created_at", "2017-09-13 17:30:23.503951"], ["updated_at", "2017-09-13 17:30:23.503951"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "explicabo"], ["created_at", "2017-09-13 17:30:23.508309"], ["updated_at", "2017-09-13 17:30:23.508309"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "error"], ["created_at", "2017-09-13 17:30:23.512363"], ["updated_at", "2017-09-13 17:30:23.512363"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ex"], ["created_at", "2017-09-13 17:30:23.517053"], ["updated_at", "2017-09-13 17:30:23.517053"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "vel"], ["created_at", "2017-09-13 17:30:23.521692"], ["updated_at", "2017-09-13 17:30:23.521692"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "placeat"], ["created_at", "2017-09-13 17:30:23.526580"], ["updated_at", "2017-09-13 17:30:23.526580"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sit"], ["created_at", "2017-09-13 17:30:23.531262"], ["updated_at", "2017-09-13 17:30:23.531262"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "doloremque"], ["created_at", "2017-09-13 17:30:23.535834"], ["updated_at", "2017-09-13 17:30:23.535834"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quisquam"], ["created_at", "2017-09-13 17:30:23.540696"], ["updated_at", "2017-09-13 17:30:23.540696"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptas"], ["created_at", "2017-09-13 17:30:23.545477"], ["updated_at", "2017-09-13 17:30:23.545477"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "et"], ["created_at", "2017-09-13 17:30:23.549869"], ["updated_at", "2017-09-13 17:30:23.549869"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "aspernatur"], ["created_at", "2017-09-13 17:30:23.555284"], ["updated_at", "2017-09-13 17:30:23.555284"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "totam"], ["created_at", "2017-09-13 17:30:23.560128"], ["updated_at", "2017-09-13 17:30:23.560128"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "perspiciatis"], ["created_at", "2017-09-13 17:30:23.564597"], ["updated_at", "2017-09-13 17:30:23.564597"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "inventore"], ["created_at", "2017-09-13 17:30:23.568685"], ["updated_at", "2017-09-13 17:30:23.568685"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "est"], ["created_at", "2017-09-13 17:30:23.573338"], ["updated_at", "2017-09-13 17:30:23.573338"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "necessitatibus"], ["created_at", "2017-09-13 17:30:23.578295"], ["updated_at", "2017-09-13 17:30:23.578295"]]
+  [1m[36m (7.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "error"], ["created_at", "2017-09-13 17:30:23.588717"], ["updated_at", "2017-09-13 17:30:23.588717"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "accusamus"], ["created_at", "2017-09-13 17:30:23.593153"], ["updated_at", "2017-09-13 17:30:23.593153"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "minima"], ["created_at", "2017-09-13 17:30:23.597668"], ["updated_at", "2017-09-13 17:30:23.597668"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "incidunt"], ["created_at", "2017-09-13 17:30:23.601706"], ["updated_at", "2017-09-13 17:30:23.601706"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "et"], ["created_at", "2017-09-13 17:30:23.605750"], ["updated_at", "2017-09-13 17:30:23.605750"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quasi"], ["created_at", "2017-09-13 17:30:23.609802"], ["updated_at", "2017-09-13 17:30:23.609802"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "facere"], ["created_at", "2017-09-13 17:30:23.613913"], ["updated_at", "2017-09-13 17:30:23.613913"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "cum"], ["created_at", "2017-09-13 17:30:23.617992"], ["updated_at", "2017-09-13 17:30:23.617992"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "saepe"], ["created_at", "2017-09-13 17:30:23.623240"], ["updated_at", "2017-09-13 17:30:23.623240"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "dignissimos"], ["created_at", "2017-09-13 17:30:23.628036"], ["updated_at", "2017-09-13 17:30:23.628036"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "nemo"], ["created_at", "2017-09-13 17:30:23.631869"], ["updated_at", "2017-09-13 17:30:23.631869"]]
+  [1m[35m (2.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "beatae"], ["created_at", "2017-09-13 17:30:23.635902"], ["updated_at", "2017-09-13 17:30:23.635902"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "fugiat"], ["created_at", "2017-09-13 17:30:23.639812"], ["updated_at", "2017-09-13 17:30:23.639812"]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quia"], ["created_at", "2017-09-13 17:30:23.645664"], ["updated_at", "2017-09-13 17:30:23.645664"]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "natus"], ["created_at", "2017-09-13 17:30:23.651470"], ["updated_at", "2017-09-13 17:30:23.651470"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "cum"], ["created_at", "2017-09-13 17:30:23.656470"], ["updated_at", "2017-09-13 17:30:23.656470"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quisquam"], ["created_at", "2017-09-13 17:30:23.660692"], ["updated_at", "2017-09-13 17:30:23.660692"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "eaque"], ["created_at", "2017-09-13 17:30:23.665058"], ["updated_at", "2017-09-13 17:30:23.665058"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptatibus"], ["created_at", "2017-09-13 17:30:23.669825"], ["updated_at", "2017-09-13 17:30:23.669825"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "hic"], ["created_at", "2017-09-13 17:30:23.674254"], ["updated_at", "2017-09-13 17:30:23.674254"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "enim"], ["created_at", "2017-09-13 17:30:23.678982"], ["updated_at", "2017-09-13 17:30:23.678982"]]
+  [1m[35m (6.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ut"], ["created_at", "2017-09-13 17:30:23.687835"], ["updated_at", "2017-09-13 17:30:23.687835"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "fugit"], ["created_at", "2017-09-13 17:30:23.692480"], ["updated_at", "2017-09-13 17:30:23.692480"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "velit"], ["created_at", "2017-09-13 17:30:23.697489"], ["updated_at", "2017-09-13 17:30:23.697489"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ut"], ["created_at", "2017-09-13 17:30:23.701913"], ["updated_at", "2017-09-13 17:30:23.701913"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ut"], ["created_at", "2017-09-13 17:30:23.707140"], ["updated_at", "2017-09-13 17:30:23.707140"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "qui"], ["created_at", "2017-09-13 17:30:23.712313"], ["updated_at", "2017-09-13 17:30:23.712313"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "debitis"], ["created_at", "2017-09-13 17:30:23.717091"], ["updated_at", "2017-09-13 17:30:23.717091"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "cum"], ["created_at", "2017-09-13 17:30:23.722111"], ["updated_at", "2017-09-13 17:30:23.722111"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "saepe"], ["created_at", "2017-09-13 17:30:23.727294"], ["updated_at", "2017-09-13 17:30:23.727294"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "tempore"], ["created_at", "2017-09-13 17:30:23.732916"], ["updated_at", "2017-09-13 17:30:23.732916"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "qui"], ["created_at", "2017-09-13 17:30:23.738340"], ["updated_at", "2017-09-13 17:30:23.738340"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ut"], ["created_at", "2017-09-13 17:30:23.744174"], ["updated_at", "2017-09-13 17:30:23.744174"]]
+  [1m[35m (3.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "rerum"], ["created_at", "2017-09-13 17:30:23.750787"], ["updated_at", "2017-09-13 17:30:23.750787"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "perspiciatis"], ["created_at", "2017-09-13 17:30:23.756242"], ["updated_at", "2017-09-13 17:30:23.756242"]]
+  [1m[35m (4.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "qui"], ["created_at", "2017-09-13 17:30:23.762975"], ["updated_at", "2017-09-13 17:30:23.762975"]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "iusto"], ["created_at", "2017-09-13 17:30:23.768472"], ["updated_at", "2017-09-13 17:30:23.768472"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quis"], ["created_at", "2017-09-13 17:30:23.773724"], ["updated_at", "2017-09-13 17:30:23.773724"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "consequuntur"], ["created_at", "2017-09-13 17:30:23.779151"], ["updated_at", "2017-09-13 17:30:23.779151"]]
+  [1m[35m (7.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "harum"], ["created_at", "2017-09-13 17:30:23.788301"], ["updated_at", "2017-09-13 17:30:23.788301"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "alias"], ["created_at", "2017-09-13 17:30:23.793204"], ["updated_at", "2017-09-13 17:30:23.793204"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "dolor"], ["created_at", "2017-09-13 17:30:23.797883"], ["updated_at", "2017-09-13 17:30:23.797883"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "molestias"], ["created_at", "2017-09-13 17:30:23.808988"], ["updated_at", "2017-09-13 17:30:23.808988"]]
+  [1m[35m (8.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "omnis"], ["created_at", "2017-09-13 17:30:23.819734"], ["updated_at", "2017-09-13 17:30:23.819734"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quibusdam"], ["created_at", "2017-09-13 17:30:23.825368"], ["updated_at", "2017-09-13 17:30:23.825368"]]
+  [1m[35m (7.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "delectus"], ["created_at", "2017-09-13 17:30:23.835763"], ["updated_at", "2017-09-13 17:30:23.835763"]]
+  [1m[36m (3.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "molestiae"], ["created_at", "2017-09-13 17:30:23.841250"], ["updated_at", "2017-09-13 17:30:23.841250"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "similique"], ["created_at", "2017-09-13 17:30:23.845988"], ["updated_at", "2017-09-13 17:30:23.845988"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptatem"], ["created_at", "2017-09-13 17:30:23.850987"], ["updated_at", "2017-09-13 17:30:23.850987"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ut"], ["created_at", "2017-09-13 17:30:23.856025"], ["updated_at", "2017-09-13 17:30:23.856025"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptate"], ["created_at", "2017-09-13 17:30:23.860631"], ["updated_at", "2017-09-13 17:30:23.860631"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sint"], ["created_at", "2017-09-13 17:30:23.865074"], ["updated_at", "2017-09-13 17:30:23.865074"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "sit"], ["created_at", "2017-09-13 17:30:23.870504"], ["updated_at", "2017-09-13 17:30:23.870504"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "perspiciatis"], ["created_at", "2017-09-13 17:30:23.876089"], ["updated_at", "2017-09-13 17:30:23.876089"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quia"], ["created_at", "2017-09-13 17:30:23.881130"], ["updated_at", "2017-09-13 17:30:23.881130"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ut"], ["created_at", "2017-09-13 17:30:23.886078"], ["updated_at", "2017-09-13 17:30:23.886078"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "eos"], ["created_at", "2017-09-13 17:30:23.891884"], ["updated_at", "2017-09-13 17:30:23.891884"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sit"], ["created_at", "2017-09-13 17:30:23.896773"], ["updated_at", "2017-09-13 17:30:23.896773"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "laborum"], ["created_at", "2017-09-13 17:30:23.901440"], ["updated_at", "2017-09-13 17:30:23.901440"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "et"], ["created_at", "2017-09-13 17:30:23.905635"], ["updated_at", "2017-09-13 17:30:23.905635"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "provident"], ["created_at", "2017-09-13 17:30:23.909779"], ["updated_at", "2017-09-13 17:30:23.909779"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "architecto"], ["created_at", "2017-09-13 17:30:23.914424"], ["updated_at", "2017-09-13 17:30:23.914424"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ut"], ["created_at", "2017-09-13 17:30:23.919672"], ["updated_at", "2017-09-13 17:30:23.919672"]]
+  [1m[35m (11.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quibusdam"], ["created_at", "2017-09-13 17:30:23.933889"], ["updated_at", "2017-09-13 17:30:23.933889"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "qui"], ["created_at", "2017-09-13 17:30:23.939379"], ["updated_at", "2017-09-13 17:30:23.939379"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sunt"], ["created_at", "2017-09-13 17:30:23.945417"], ["updated_at", "2017-09-13 17:30:23.945417"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "recusandae"], ["created_at", "2017-09-13 17:30:23.950436"], ["updated_at", "2017-09-13 17:30:23.950436"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ut"], ["created_at", "2017-09-13 17:30:23.956671"], ["updated_at", "2017-09-13 17:30:23.956671"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptatum"], ["created_at", "2017-09-13 17:30:23.962452"], ["updated_at", "2017-09-13 17:30:23.962452"]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "alias"], ["created_at", "2017-09-13 17:30:23.969656"], ["updated_at", "2017-09-13 17:30:23.969656"]]
+  [1m[36m (3.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "sunt"], ["created_at", "2017-09-13 17:30:23.975864"], ["updated_at", "2017-09-13 17:30:23.975864"]]
+  [1m[35m (3.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "veritatis"], ["created_at", "2017-09-13 17:30:23.982084"], ["updated_at", "2017-09-13 17:30:23.982084"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptas"], ["created_at", "2017-09-13 17:30:23.987779"], ["updated_at", "2017-09-13 17:30:23.987779"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "vel"], ["created_at", "2017-09-13 17:30:23.992647"], ["updated_at", "2017-09-13 17:30:23.992647"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "impedit"], ["created_at", "2017-09-13 17:30:23.998352"], ["updated_at", "2017-09-13 17:30:23.998352"]]
+  [1m[35m (6.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "autem"], ["created_at", "2017-09-13 17:30:24.006795"], ["updated_at", "2017-09-13 17:30:24.006795"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptatem"], ["created_at", "2017-09-13 17:30:24.012031"], ["updated_at", "2017-09-13 17:30:24.012031"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "nam"], ["created_at", "2017-09-13 17:30:24.016726"], ["updated_at", "2017-09-13 17:30:24.016726"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "in"], ["created_at", "2017-09-13 17:30:24.021426"], ["updated_at", "2017-09-13 17:30:24.021426"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "dolore"], ["created_at", "2017-09-13 17:30:24.026710"], ["updated_at", "2017-09-13 17:30:24.026710"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "aperiam"], ["created_at", "2017-09-13 17:30:24.031975"], ["updated_at", "2017-09-13 17:30:24.031975"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "culpa"], ["created_at", "2017-09-13 17:30:24.036289"], ["updated_at", "2017-09-13 17:30:24.036289"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "labore"], ["created_at", "2017-09-13 17:30:24.040759"], ["updated_at", "2017-09-13 17:30:24.040759"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "a"], ["created_at", "2017-09-13 17:30:24.045537"], ["updated_at", "2017-09-13 17:30:24.045537"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "facilis"], ["created_at", "2017-09-13 17:30:24.050132"], ["updated_at", "2017-09-13 17:30:24.050132"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ex"], ["created_at", "2017-09-13 17:30:24.054436"], ["updated_at", "2017-09-13 17:30:24.054436"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "odio"], ["created_at", "2017-09-13 17:30:24.059510"], ["updated_at", "2017-09-13 17:30:24.059510"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "itaque"], ["created_at", "2017-09-13 17:30:24.064247"], ["updated_at", "2017-09-13 17:30:24.064247"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quis"], ["created_at", "2017-09-13 17:30:24.068695"], ["updated_at", "2017-09-13 17:30:24.068695"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "maiores"], ["created_at", "2017-09-13 17:30:24.073255"], ["updated_at", "2017-09-13 17:30:24.073255"]]
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "cum"], ["created_at", "2017-09-13 17:30:24.082254"], ["updated_at", "2017-09-13 17:30:24.082254"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "libero"], ["created_at", "2017-09-13 17:30:24.087638"], ["updated_at", "2017-09-13 17:30:24.087638"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ad"], ["created_at", "2017-09-13 17:30:24.092365"], ["updated_at", "2017-09-13 17:30:24.092365"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quibusdam"], ["created_at", "2017-09-13 17:30:24.096557"], ["updated_at", "2017-09-13 17:30:24.096557"]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "aut"], ["created_at", "2017-09-13 17:30:24.100817"], ["updated_at", "2017-09-13 17:30:24.100817"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "et"], ["created_at", "2017-09-13 17:30:24.105158"], ["updated_at", "2017-09-13 17:30:24.105158"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "error"], ["created_at", "2017-09-13 17:30:24.109860"], ["updated_at", "2017-09-13 17:30:24.109860"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "mollitia"], ["created_at", "2017-09-13 17:30:24.114270"], ["updated_at", "2017-09-13 17:30:24.114270"]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "odio"], ["created_at", "2017-09-13 17:30:24.118276"], ["updated_at", "2017-09-13 17:30:24.118276"]]
+  [1m[35m (2.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "repudiandae"], ["created_at", "2017-09-13 17:30:24.122127"], ["updated_at", "2017-09-13 17:30:24.122127"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "quidem"], ["created_at", "2017-09-13 17:30:24.126396"], ["updated_at", "2017-09-13 17:30:24.126396"]]
+  [1m[35m (3.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "consequatur"], ["created_at", "2017-09-13 17:30:24.131806"], ["updated_at", "2017-09-13 17:30:24.131806"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "eligendi"], ["created_at", "2017-09-13 17:30:24.136283"], ["updated_at", "2017-09-13 17:30:24.136283"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "sunt"], ["created_at", "2017-09-13 17:30:24.141011"], ["updated_at", "2017-09-13 17:30:24.141011"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "vel"], ["created_at", "2017-09-13 17:30:24.145303"], ["updated_at", "2017-09-13 17:30:24.145303"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ut"], ["created_at", "2017-09-13 17:30:24.149717"], ["updated_at", "2017-09-13 17:30:24.149717"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "saepe"], ["created_at", "2017-09-13 17:30:24.153984"], ["updated_at", "2017-09-13 17:30:24.153984"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "odit"], ["created_at", "2017-09-13 17:30:24.158858"], ["updated_at", "2017-09-13 17:30:24.158858"]]
+  [1m[36m (7.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "sint"], ["created_at", "2017-09-13 17:30:24.167676"], ["updated_at", "2017-09-13 17:30:24.167676"]]
+  [1m[35m (7.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "eaque"], ["created_at", "2017-09-13 17:30:24.177274"], ["updated_at", "2017-09-13 17:30:24.177274"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "est"], ["created_at", "2017-09-13 17:30:24.181903"], ["updated_at", "2017-09-13 17:30:24.181903"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "et"], ["created_at", "2017-09-13 17:30:24.187316"], ["updated_at", "2017-09-13 17:30:24.187316"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "rerum"], ["created_at", "2017-09-13 17:30:24.192468"], ["updated_at", "2017-09-13 17:30:24.192468"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "vel"], ["created_at", "2017-09-13 17:30:24.198010"], ["updated_at", "2017-09-13 17:30:24.198010"]]
+  [1m[36m (4.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "dicta"], ["created_at", "2017-09-13 17:30:24.205312"], ["updated_at", "2017-09-13 17:30:24.205312"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "tempora"], ["created_at", "2017-09-13 17:30:24.210331"], ["updated_at", "2017-09-13 17:30:24.210331"]]
+  [1m[36m (7.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "libero"], ["created_at", "2017-09-13 17:30:24.220535"], ["updated_at", "2017-09-13 17:30:24.220535"]]
+  [1m[35m (8.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "laboriosam"], ["created_at", "2017-09-13 17:30:24.232249"], ["updated_at", "2017-09-13 17:30:24.232249"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "ut"], ["created_at", "2017-09-13 17:30:24.237490"], ["updated_at", "2017-09-13 17:30:24.237490"]]
+  [1m[35m (5.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "placeat"], ["created_at", "2017-09-13 17:30:24.244898"], ["updated_at", "2017-09-13 17:30:24.244898"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "aperiam"], ["created_at", "2017-09-13 17:30:24.249641"], ["updated_at", "2017-09-13 17:30:24.249641"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "magni"], ["created_at", "2017-09-13 17:30:24.255197"], ["updated_at", "2017-09-13 17:30:24.255197"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "deleniti"], ["created_at", "2017-09-13 17:30:24.260696"], ["updated_at", "2017-09-13 17:30:24.260696"]]
+  [1m[35m (7.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "esse"], ["created_at", "2017-09-13 17:30:24.270370"], ["updated_at", "2017-09-13 17:30:24.270370"]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "aut"], ["created_at", "2017-09-13 17:30:24.279678"], ["updated_at", "2017-09-13 17:30:24.279678"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "voluptatem"], ["created_at", "2017-09-13 17:30:24.284335"], ["updated_at", "2017-09-13 17:30:24.284335"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "dolores"], ["created_at", "2017-09-13 17:30:24.288857"], ["updated_at", "2017-09-13 17:30:24.288857"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "minima"], ["created_at", "2017-09-13 17:30:24.293511"], ["updated_at", "2017-09-13 17:30:24.293511"]]
+  [1m[36m (4.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "et"], ["created_at", "2017-09-13 17:30:24.299966"], ["updated_at", "2017-09-13 17:30:24.299966"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "ut"], ["created_at", "2017-09-13 17:30:24.304833"], ["updated_at", "2017-09-13 17:30:24.304833"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "voluptatem"], ["created_at", "2017-09-13 17:30:24.309185"], ["updated_at", "2017-09-13 17:30:24.309185"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "voluptates"], ["created_at", "2017-09-13 17:30:24.313555"], ["updated_at", "2017-09-13 17:30:24.313555"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "aut"], ["created_at", "2017-09-13 17:30:24.317914"], ["updated_at", "2017-09-13 17:30:24.317914"]]
+  [1m[35m (12.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quia"], ["created_at", "2017-09-13 17:30:24.332646"], ["updated_at", "2017-09-13 17:30:24.332646"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "nemo"], ["created_at", "2017-09-13 17:30:24.337973"], ["updated_at", "2017-09-13 17:30:24.337973"]]
+  [1m[35m (3.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "fugit"], ["created_at", "2017-09-13 17:30:24.343963"], ["updated_at", "2017-09-13 17:30:24.343963"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "id"], ["created_at", "2017-09-13 17:30:24.349042"], ["updated_at", "2017-09-13 17:30:24.349042"]]
+  [1m[35m (3.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "possimus"], ["created_at", "2017-09-13 17:30:24.355519"], ["updated_at", "2017-09-13 17:30:24.355519"]]
+  [1m[36m (6.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "adipisci"], ["created_at", "2017-09-13 17:30:24.364825"], ["updated_at", "2017-09-13 17:30:24.364825"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "quam"], ["created_at", "2017-09-13 17:30:24.370255"], ["updated_at", "2017-09-13 17:30:24.370255"]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "molestias"], ["created_at", "2017-09-13 17:30:24.376532"], ["updated_at", "2017-09-13 17:30:24.376532"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "doloremque"], ["created_at", "2017-09-13 17:30:24.382403"], ["updated_at", "2017-09-13 17:30:24.382403"]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "odit"], ["created_at", "2017-09-13 17:30:24.388850"], ["updated_at", "2017-09-13 17:30:24.388850"]]
+  [1m[35m (3.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "aut"], ["created_at", "2017-09-13 17:30:24.394448"], ["updated_at", "2017-09-13 17:30:24.394448"]]
+  [1m[36m (3.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "labore"], ["created_at", "2017-09-13 17:30:24.400840"], ["updated_at", "2017-09-13 17:30:24.400840"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "songs" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "tempore"], ["created_at", "2017-09-13 17:30:24.405993"], ["updated_at", "2017-09-13 17:30:24.405993"]]
+  [1m[36m (3.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/songs/index" for 107.212.87.131 at 2017-09-13 17:34:57 +0000
+Cannot render console from 107.212.87.131! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mSong Load (0.3ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 14ms (ActiveRecord: 0.7ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Song with 'id'=index):
+  app/controllers/songs_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (62.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.1/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.1ms)
+
+
+Started GET "/songs" for 107.212.87.131 at 2017-09-13 18:12:14 +0000
+Cannot render console from 107.212.87.131! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#index as HTML
+  [1m[36mSong Load (6.9ms)[0m  [1mSELECT  "songs".* FROM "songs"  ORDER BY "songs"."created_at" DESC LIMIT 20 OFFSET 0[0m
+  Rendered songs/index.html.erb within layouts/application (26.3ms)
+Completed 200 OK in 625ms (Views: 616.9ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/songs/2" for 107.212.87.131 at 2017-09-13 18:12:27 +0000
+Cannot render console from 107.212.87.131! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mSong Load (0.1ms)[0m  SELECT  "songs".* FROM "songs" WHERE "songs"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mArtist Load (0.5ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered songs/show.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/songs" for 107.212.87.131 at 2017-09-13 18:12:39 +0000
+Cannot render console from 107.212.87.131! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#index as HTML
+  [1m[35mSong Load (3.9ms)[0m  SELECT  "songs".* FROM "songs"  ORDER BY "songs"."created_at" DESC LIMIT 20 OFFSET 0
+  Rendered songs/index.html.erb within layouts/application (19.5ms)
+Completed 200 OK in 27ms (Views: 22.9ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/songs" for 107.212.87.131 at 2017-09-13 18:15:54 +0000
+Cannot render console from 107.212.87.131! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "songs"[0m
+  [1m[35mSong Load (3.9ms)[0m  SELECT  "songs".* FROM "songs"  ORDER BY "songs"."created_at" DESC LIMIT 20 OFFSET 0
+  Rendered songs/index.html.erb within layouts/application (931.1ms)
+Completed 200 OK in 936ms (Views: 932.0ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/songs?page=3" for 107.212.87.131 at 2017-09-13 18:15:58 +0000
+Cannot render console from 107.212.87.131! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SongsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "songs"[0m
+  [1m[35mSong Load (7.8ms)[0m  SELECT  "songs".* FROM "songs"  ORDER BY "songs"."created_at" DESC LIMIT 20 OFFSET 40
+  Rendered songs/index.html.erb within layouts/application (39.7ms)
+Completed 200 OK in 95ms (Views: 86.0ms | ActiveRecord: 8.2ms)
